@@ -1,0 +1,118 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: var(--max-width);
+  margin: 128px auto 40px auto;
+  align-items: center;
+  @media (max-width: 750px) {
+  }
+  p {
+    &:nth-child(1) {
+      font-size: 32px;
+      color: var(--color-dark-blue);
+      font-weight: bold;
+      span {
+        color: var(--color-light-blue);
+      }
+    }
+    &:nth-child(2) {
+      font-size: 20px;
+      color: #606060;
+      font-weight: bold;
+      max-width: 565px;
+      text-align: center;
+    }
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+
+  @media (max-width: 750px) {
+    gap: 40px;
+  }
+  @media (max-width: 460px) {
+    justify-content: space-between;
+  }
+  li {
+    a {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      font-weight: bold;
+      color: var((--color-dark-blue));
+      text-decoration: none;
+    }
+    &:nth-child(1) {
+      a {
+        color: var(--color-light-blue);
+      }
+    }
+  }
+}
+
+.footer-divier {
+  align-self: stretch;
+  height: 1px;
+  background-color: #d8d8d8;
+  justify-content: space-between;
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
+
+.footer-row {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  @media (max-width: 750px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer-copyright {
+    font-size: 14px !important;
+    color: #adadad !important;
+  }
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  @media (max-width: 750px) {
+    gap: 10px;
+  }
+  p {
+    font-size: 14px !important;
+    color: var(--color-light-blue) !important;
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+  .footer-social-media-icon {
+    cursor: pointer;
+    color: #adadad !important;
+    @media (max-width: 750px) {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #adadad;
+      border-radius: 100%;
+
+      font-size: 12px !important;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.bookWrapperMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.booksWrapper {
+  padding: 20;
+  height: 300px;
+  min-width: 200px;
+  width: 250px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #303952;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+}
+.bookName {
+  border-bottom: 2px solid white;
+  padding: 10px;
+}
+
+.button {
+  width: 60px;
+  text-align: center;
+  padding: 3px;
+  display: grid;
+  margin: 0 37%;
+  font-weight: 700;
+  background-color: #303952;
+  border-radius: 30px;
+  color: white;
+  &:hover {
+    background-color: red;
+  }
+}

@@ -1,0 +1,38 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #232340;
+  --second: #5468e7;
+  --link: #8b8b8b;
+}
+
+.hs {
+  height: 127.5px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background: var(--main);
+  }
+} */
